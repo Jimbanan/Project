@@ -10,21 +10,26 @@
 
 <form class="avtorizacija" action="authorization.php" method="post" enctype="multipart/form-data">
     <div class="flex-wrapper-one">
-        <p class="labelmer">мероприятия</p>
         <p class="labelvsu">ВГТУ</p>
+        <p class="labelmer">мероприятия</p>
     </div>
 
-    <p class="username-label" >Имя пользователя (e-mail)</p>
-    <input type="text" name="name" size="40" class="user-name-area" placeholder="Введите имя пользователя" id="signup-name">
+    <div style="margin-left: 448px;">
 
-    <p class="pass-label">Пароль</p>
-    <input type="text" name="password" size="40" class="user-name-area" placeholder="Введите пароль" id="signup-password">
+        <p class="username-label">Имя пользователя (e-mail)</p>
+        <input type="text" name="name" size="40" class="user-name-area" placeholder="Введите имя пользователя"
+               id="signup-name">
 
-    <p><input type="submit" value="Войти" class="flex-wrapper-two"></p>
-    <p><input type="submit" value="Зарегистрироваться" id="signup-sumbit" class="flex-wrapper-two"></p>
+        <p class="pass-label">Пароль</p>
+        <input type="text" name="password" size="40" class="user-name-area" placeholder="Введите пароль"
+               id="signup-password">
 
-
+        <div class="flex-wrapper-two" style="margin-left: 20px;">
+            <p><input type="submit" value="Войти" class="b1label"></p>
+            <p><input type="submit" value="Зарегистрироваться" id="signup-sumbit" class="reg-label"></p>
+        </div>
     </div>
+
 </form>
 
 
