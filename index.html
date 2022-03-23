@@ -4,18 +4,29 @@
     <title>Авторизация</title>
     <link rel="stylesheet" href="style.css"></link>
 </head>
+
 <body>
-<div class="avtorizacija">
+
+
+<form class="avtorizacija" action="authorization.php" method="post" enctype="multipart/form-data">
     <div class="flex-wrapper-one">
         <p class="labelmer">мероприятия</p>
         <p class="labelvsu">ВГТУ</p>
     </div>
-    <p class="username-label">Имя пользователя (e-mail)</p>
-    <input type="text" name="surname" size="40" class="user-name-area">
+
+    <p class="username-label" >Имя пользователя (e-mail)</p>
+    <input type="text" name="name" size="40" class="user-name-area" placeholder="Введите имя пользователя" id="signup-name">
+
     <p class="pass-label">Пароль</p>
-    <input type="text" name="surname" size="40" class="user-name-area">
+    <input type="text" name="password" size="40" class="user-name-area" placeholder="Введите пароль" id="signup-password">
+
     <p><input type="submit" value="Войти" class="flex-wrapper-two"></p>
-    <p><input type="submit" value="Зарегистрироваться" class="flex-wrapper-two"></p>
-</div>
+    <p><input type="submit" value="Зарегистрироваться" id="signup-sumbit" class="flex-wrapper-two"></p>
+
+
+    </div>
+</form>
+
+
 </body>
 </html>
