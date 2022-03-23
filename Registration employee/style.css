@@ -35,20 +35,21 @@
     margin-bottom: 0;
 }
 
-.select{ 
-    display: block; 
-    font-size: 18px; 
-    font-family: "Sansation Light"; 
-    font-weight: 300; 
-    color: #444; 
-    padding: .6em 1.4em .5em .8em; width: 100%; 
-    max-width: 80%; 
-    box-sizing: border-box; 
+.select{
+    display: block;
+    font-size: 18px;
+    font-family: "Sansation Light";
+    font-weight: 300;
+    color: #444;
+    padding: .6em 1.4em .5em .8em;
+    width: 65%;
+    max-width: 80%;
+    box-sizing: border-box;
     border: 1px solid rgba(148, 186, 203, 1);;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
     border-radius: .5em;
     margin-left: 380px;
-} 
+}
 
 .in_text{ 
     display: block; 
