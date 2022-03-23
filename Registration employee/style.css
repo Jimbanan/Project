@@ -1,0 +1,125 @@
+.title {
+    border-radius: 45px;
+    padding: 15px 145px 15px 145px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 360px;
+    top: 5px;
+    border: 5px solid var(--white);
+}
+
+.title_font {
+    height: 46px;
+    width: 428px;
+    font-family: "Sansation Light";
+    font-size: 36px;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--light-steel-blue);
+    display: flex;
+    padding-left: 50px;
+}
+
+.name-label {
+    height: 30px;
+    width: 672px;
+    font-family: "Sansation Light";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--black);
+    display: flex;
+    position: relative;
+    left: 380px;
+    margin-bottom: 0;
+}
+
+.select{ 
+    display: block; 
+    font-size: 18px; 
+    font-family: "Sansation Light"; 
+    font-weight: 300; 
+    color: #444; 
+    padding: .6em 1.4em .5em .8em; width: 100%; 
+    max-width: 80%; 
+    box-sizing: border-box; 
+    border: 1px solid rgba(148, 186, 203, 1);;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+    border-radius: .5em;
+    margin-left: 380px;
+} 
+
+.in_text{ 
+    display: block; 
+    font-size: 18px; 
+    font-family: "Sansation Light"; 
+    font-weight: 300; 
+    color: #444; 
+    padding: .6em 1.4em .5em .8em; width: 100%; 
+    max-width: 65.5%; 
+    box-sizing: border-box; 
+    border: 1px solid rgba(148, 186, 203, 1);;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+    border-radius: .5em;
+    margin-left: 380px;
+} 
+
+:root {
+    /* Colors */
+    --black: rgba(0, 0, 0, 1);
+    --dim-gray: rgba(131, 109, 109, 1);
+    --light-steel-blue: rgba(148, 186, 203, 1);
+    --silver: rgba(200, 196, 196, 1);
+    --slate-gray: rgba(101, 137, 153, 1);
+    --thistle: rgba(229, 193, 193, 1);
+    --transparent-black: rgba(0, 0, 0, 0.25);
+    --white: rgba(255, 255, 255, 1);
+}
+
+.registracija-sotrudnika {
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 45px;
+    padding: 180px 96px 60px 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--light-steel-blue);
+}
+
+.button-ref {
+    background-color: rgba(148, 186, 203, 0.46);
+    margin-right: 63px;
+    border-radius: 18px;
+    padding: 11px 21px 12px 22px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--slate-gray);
+    font-family: "Sansation Light";
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--slate-gray);
+}
+
+.cancell-button {
+    background-color: rgba(202, 199, 199, 0.46);
+    border-radius: 18px;
+    padding: 11px 45px 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--silver);
+    font-family: "Sansation Light";
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--dim-gray);
+}
+
+.flex-wrapper-three {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 390px;
+    margin-top: 20px;
+}
+  

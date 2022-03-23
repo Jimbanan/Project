@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+
+
+<body class="registracija-sotrudnika">
+
+<form class="avtorizacija" action="authorization.php" method="post" enctype="multipart/form-data">
+    <div class="title" class="container">
+        <p class="title_font">Регистрация сотрудника</p>
+    </div>
+
+
+    <div>
+        <p class="name-label">Подразделение, в котором я работаю по основной должности</p>
+        <select name="Выберите подразделение" class="select">
+            <option value="0">Выберите подразделение</option>
+            <option value="1">Первое</option>
+            <option value="2">Второе</option>
+            <option value="3">Третье</option>
+        </select>
+    </div>
+
+    <div>
+        <p class="name-label">Фамилия</p>
+        <input type="text" size="40" class="in_text" name="surname">
+    </div>
+
+    <div>
+        <p class="name-label">Имя</p>
+        <input type="text" size="40" class="in_text" name="name">
+    </div>
+
+    <div>
+        <p class="name-label">Отчество</p>
+        <input type="text" size="40" class="in_text" name="patronymic">
+    </div>
+
+    <div>
+        <p class="name-label">Имя пользователя (e-mail)</p>
+        <input type="text" size="40" class="in_text" name="login">
+    </div>
+
+    <div>
+        <p class="name-label">Пароль (не менее 6 английских символов и/или цифр без пробелов)</p>
+        <input type="text" size="40" class="in_text" name="password">
+    </div>
+
+    <div class="flex-wrapper-three">
+        <input type="submit" value="Зарегистрироваться" class="button-ref">
+        <input type="submit" value="Отмена" class="cancell-button">
+    </div>
+
+    </div>
+</form>
+
+
+</body>
+</html>
