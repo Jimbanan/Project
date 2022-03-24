@@ -3,18 +3,20 @@
 <head>
     <title>Авторизация</title>
     <link rel="stylesheet" href="style.css"></link>
+    <div class="header">
+        <h1 class="VSTU">ВГТУ</h1>
+        <p class="VSTU_full">ВОРОНЕЖСКИЙ ГОСУДАРСТВЕННЫЙ <br>ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</p>
+    </div>
 </head>
 
 <body>
-
-
 <form class="avtorizacija" action="authorization.php" method="post" enctype="multipart/form-data">
     <div class="flex-wrapper-one">
         <p class="labelvsu">ВГТУ</p>
         <p class="labelmer">мероприятия</p>
     </div>
 
-    <div style="margin-left: 448px;">
+    <div style="margin-left: auto; margin-right: auto;">
 
         <p class="username-label">Имя пользователя (e-mail)</p>
         <input type="text" name="name" size="40" class="user-name-area" placeholder="Введите имя пользователя"
@@ -24,7 +26,7 @@
         <input type="text" name="password" size="40" class="user-name-area" placeholder="Введите пароль"
                id="signup-password">
 
-        <div class="flex-wrapper-two" style="margin-left: 20px;">
+        <div class="flex-wrapper-two">
             <p><input type="submit" value="Войти" id="login-send" class="b1label"></p>
             <p><input type="submit" value="Зарегистрироваться" id="signup_sumbit" class="reg-label"></p>
         </div>
