@@ -2,7 +2,7 @@
   background-size: 100% 100%;
   background-position: center;
   /*background-image: url("https://static.overlay-tech.com/assets/18b9dfb5-30ed-4b28-8032-90d37be5e477.png");*/
-  padding: 18px 132px 60px 138px;
+  padding: 58px 132px 60px 138px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -21,46 +21,46 @@ body{
 }
 
 .VSTU {
-  font-family: "Sansation Light", serif;
+  font-family: "Arial", serif;
   font-size: 30px;
   text-align: left;
   color: white;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-left: 20px;
 }
 
 
 .VSTU_full {
-  border-left: 1px solid #d1af69;
+  border-left: 1px solid var(--gold);
   line-height: 1.5em;
-  height: 30px;
+  height: 35px;
   vertical-align: middle;
 
-  font-family: "Sansation Light", serif;
+  font-family: "Helvetica", serif;
   font-size: 11px;
 
-  color: white;
+  color: var(--gold);
+  padding-top: 3px;
   padding-left: 20px;
-  margin-top: -53px;
-  margin-left: 110px;
+  margin-top: -55px;
+  margin-left: 120px;
 }
 
 .header {
   background-color: #263145;
   width: 100%;
-  height: 55px;
-  margin-top: -28px;
+  height: 80px;
+  margin-top: -30px;
   margin-bottom: 10px;
-  margin-left: -7px;
-  padding-right: 15px;
-  padding-bottom: 1px;
-  box-shadow: 10px 5px 5px rgba(209, 175, 105, 0.53);
+  margin-left: -10px;
+  padding-right: 20px;
+  box-shadow: 0px 5px 15px rgba(116, 116, 116, 0.62);
 }
 
 .flex-wrapper-one {
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.55);
   margin-bottom: 55px;
   border-radius: 25px;
   padding: 0px 150px 2px 100px;
@@ -74,7 +74,7 @@ body{
 .labelmer {
 
   transform: rotate(90deg);
-  border-bottom: 2px dashed #d1af69;
+  border-bottom: 2px dashed #AC9D8296;
   line-height: 1.5em;
   height: 50px;
 
@@ -84,7 +84,7 @@ body{
   font-family: "Forum", serif;
   font-size: 25px;
   font-weight: 600;
-  color: rgba(38, 49, 69, 0.49);
+  color: rgba(172, 157, 130, 0.59);
   display: flex;
   text-align: right;
   position: absolute;
@@ -92,18 +92,6 @@ body{
   bottom: 0px;
 }
 
-.labelvsu {
-  height: 78px;
-  width: 130px;
-  font-family: "Fira Sans Extra Condensed";
-  font-size: 72px;
-  font-weight: 400;
-  line-height: normal;
-  color: rgba(93, 189, 243, 1);
-  display: flex;
-  text-align: right;
-  position: relative;
-}
 
 .username-label {
   height: 17px;
@@ -114,26 +102,29 @@ body{
   line-height: normal;
   color: rgba(65, 129, 168, 1);
   display: flex;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 .user-name-area {
-  width: 337px;
-  height: 27px;
-  background-color: var(--white);
-  margin-bottom: 14px;
-  border-radius: 5px;
-  border: 1px solid rgba(65, 129, 168, 0.65);
+  width: 400px;
+  height: 30px;
+  background-color: var(--transparent-white);
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid rgba(65, 129, 168, 0.65);
+  outline: none;
+
 }
 
 .pass-label {
   height: 16px;
   width: 258px;
-  font-family: "Sansation Light";
-  font-size: 18px;
+  font-family: "Courier New";
+  font-size: 15px;
   font-weight: 300;
   line-height: normal;
-  color: rgba(65, 129, 168, 1);
+  color: var(--dark-blue);
   display: flex;
   margin-bottom: 5px;
 }
@@ -187,4 +178,7 @@ body{
   --thistle: rgba(229, 193, 193, 1);
   --transparent-black: rgba(0, 0, 0, 0.25);
   --white: rgba(255, 255, 255, 1);
+  --transparent-white: rgba(255, 255, 255, 0.75);
+  --gold: #c3b294;
+  --dark-blue: #263145;
 }
