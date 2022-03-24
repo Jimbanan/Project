@@ -11,6 +11,13 @@
   margin-right: 550px;
 }
 
+h1 {
+  color: var(--dark-blue);
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .logo {
   width: 300px;
   margin-left: -70px;
@@ -73,6 +80,25 @@ body{
 
 }
 
+.h1container {
+
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: -160px;
+  margin-left: 730px;
+
+  justify-content: center;
+  text-align: center;
+  padding-top: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  box-shadow: 0 7px 6px 0 var(--gold);
+
+  width: 33.5%;
+  height: 50px;
+
+}
+
 .labelmer {
 
   transform: rotate(90deg);
@@ -94,8 +120,10 @@ body{
   bottom: 0px;
 }
 
-.limiter {
 
+
+.limiter {
+  text-align: center;
   margin-top: -308px;
   width: 100%;
 }
@@ -181,38 +209,45 @@ body{
 }
 
 .b1label {
+  text-align: center;
+  justify-content: center;
   height: 40px;
   width: 100px;
-  font-family: 'Comfortaa', cursive;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
-  display: flex;
 
-  padding-left: 19px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
   border-color: var(--gold);
   color: var(--gold);
+  background-color: rgba(255, 255, 255, 0.21);
   margin-left: 10px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px 0 var(--transparent-black);
-  align-items: center;
+  box-shadow: 0 2px 5px 0 var(--transparent-black);
+
 }
 
 .reg-label {
+  justify-content: center;
   height: 40px;
   width: 230px;
+
   font-family: 'Comfortaa', cursive;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
   line-height: normal;
   display: flex;
-  padding-left: 19px;
+
   border-color: var(--gold);
+  background-color: rgba(255, 255, 255, 0.21);
   color: var(--gold);
+
   margin-left: 10px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px 0 var(--transparent-black);
-  align-items: center;
+  box-shadow: 0 2px 5px 0 var(--transparent-black);
 }
 
 :root {
