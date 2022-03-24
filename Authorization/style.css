@@ -1,7 +1,7 @@
 .avtorizacija {
   background-size: 100% 100%;
   background-position: center;
-  background-image: url("https://static.overlay-tech.com/assets/18b9dfb5-30ed-4b28-8032-90d37be5e477.png");
+  /*background-image: url("https://static.overlay-tech.com/assets/18b9dfb5-30ed-4b28-8032-90d37be5e477.png");*/
   padding: 18px 132px 60px 138px;
   display: flex;
   flex-direction: column;
@@ -9,8 +9,11 @@
   margin-top: -5px;
 }
 
-.block-vert-line{
-
+.logo {
+  width: 300px;
+  margin-left: -130px;
+  padding-left: 15px;
+  margin-top: -55px;
 }
 
 body{
@@ -62,22 +65,29 @@ body{
   border-radius: 25px;
   padding: 0px 150px 2px 100px;
   box-shadow: 0 4px 4px 0 var(--transparent-black);
+  width: 100px;
   position: relative;
 }
 
 .labelmer {
-  height: 26px;
-  width: 132px;
-  font-family: "Forum";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: normal;
-  color: rgba(162, 189, 211, 1);
+
+  transform: rotate(90deg);
+  border-bottom: 1.5px solid #d1af69;
+  line-height: 1.5em;
+  height: 50px;
+
+  padding-top: 175px;
+  padding-left: 0px;
+
+  font-family: "Forum", serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #263145;
   display: flex;
   text-align: right;
   position: absolute;
-  left: 118px;
-  bottom: 18px;
+  left: 270px;
+  bottom: 3px;
 }
 
 .labelvsu {
