@@ -3,6 +3,7 @@
 <head>
     <title>Авторизация</title>
     <link rel="stylesheet" href="style.css"></link>
+
     <div class="header">
         <h1 class="VSTU">ВГТУ</h1>
         <p class="VSTU_full">ВОРОНЕЖСКИЙ ГОСУДАРСТВЕННЫЙ <br>ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</p>
@@ -16,24 +17,30 @@
         <p class="labelmer">MЕРОПРИЯТИЯ</p>
     </div>
 
-    <div style="margin-left: auto; margin-right: auto;">
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
 
-        <p class="username-label">имя пользователя (e-mail)</p>
-        <input type="text" name="name" size="40" class="user-name-area" placeholder="Введите имя пользователя"
-               id="signup-name">
+        <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+            <input class="input100" type="text" name="email" id="signup-name" placeholder="логин">
+            <span class="focus-input100" data-placeholder="Email"></span>
+        </div>
 
-        <p class="pass-label">ПАРОЛЬ</p>
-        <input type="text" name="password" size="40" class="user-name-area" placeholder="Введите пароль"
-               id="signup-password">
+        <div class="wrap-input100 validate-input">
+        <input class="input100" type="password" name="pass" id="signup-password" placeholder="пароль">
+        <span class="focus-input100" data-placeholder="Password"></span>
+        </div>
 
         <div class="flex-wrapper-two">
             <p><input type="submit" value="Войти" id="login-send" class="b1label"></p>
             <p><input type="submit" value="Зарегистрироваться" id="signup_sumbit" class="reg-label"></p>
         </div>
     </div>
-
+    </div>
+    </div>
 </form>
 
 <script src="registration.js"></script>
+
 </body>
 </html>

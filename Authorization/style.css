@@ -1,12 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 .avtorizacija {
   background-size: 100% 100%;
-  background-position: center;
-  /*background-image: url("https://static.overlay-tech.com/assets/18b9dfb5-30ed-4b28-8032-90d37be5e477.png");*/
-  padding: 58px 132px 60px 138px;
+  padding: 38px 132px 60px 138px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: -5px;
+  margin-top: 150px;
+  margin-right: 550px;
 }
 
 .logo {
@@ -21,7 +23,7 @@ body{
 }
 
 .VSTU {
-  font-family: "Arial", serif;
+  font-family: 'Cuprum', sans-serif; /* Гарнитура шрифта */
   font-size: 30px;
   text-align: left;
   color: white;
@@ -36,7 +38,7 @@ body{
   height: 35px;
   vertical-align: middle;
 
-  font-family: "Helvetica", serif;
+  font-family: 'Cuprum', sans-serif;
   font-size: 11px;
 
   color: var(--gold);
@@ -81,7 +83,7 @@ body{
   padding-top: 150px;
   padding-left: 0px;
 
-  font-family: "Forum", serif;
+  font-family: 'Cuprum', sans-serif;
   font-size: 25px;
   font-weight: 600;
   color: rgba(172, 157, 130, 0.59);
@@ -92,41 +94,85 @@ body{
   bottom: 0px;
 }
 
+.limiter {
 
-.username-label {
-  height: 17px;
-  width: 258px;
-  font-family: "Sansation Light";
-  font-size: 18px;
-  font-weight: 300;
-  line-height: normal;
-  color: rgba(65, 129, 168, 1);
+  margin-top: -308px;
+  width: 100%;
+}
+
+.container-login100 {
+  margin-left: 590px;
+  width: 80%;
+  border-radius: 20px;
+  min-height: 31vh;
   display: flex;
-  margin-bottom: 10px;
-}
-
-.user-name-area {
-  width: 400px;
-  height: 30px;
-  background-color: var(--transparent-white);
-  margin-bottom: 10px;
-  border-radius: 3px;
-  border: none;
-  border-bottom: 1px solid rgba(65, 129, 168, 0.65);
-  outline: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 4px 4px 0 var(--transparent-black);
 
 }
 
-.pass-label {
-  height: 16px;
-  width: 258px;
-  font-family: "Courier New";
+.wrap-input100 {
+  width: 100%;
+  margin-top: 15px;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+.input100 {
+  font-family: 'Comfortaa', cursive;
   font-size: 15px;
-  font-weight: 300;
-  line-height: normal;
-  color: var(--dark-blue);
-  display: flex;
-  margin-bottom: 5px;
+  color: #555555;
+  line-height: 1.2;
+  border: none;
+
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+  outline: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #6a7dfe;
+  background: -webkit-linear-gradient(left, var(--gold), var(--dark-blue));
+  background: -o-linear-gradient(left, #21d4fd, #b721ff);
+  background: -moz-linear-gradient(left, #21d4fd, #b721ff);
+  background: linear-gradient(left, #21d4fd, #b721ff);
+}
+:focus::-webkit-input-placeholder {color: transparent}
+::-webkit-input-placeholder {  font-family: 'Comfortaa', cursive;}
+
+.input100:focus + .focus-input100::after {
+  top: -15px;
+}
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::after {
+  top: -15px;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
 }
 
 .flex-wrapper-two {
@@ -137,34 +183,35 @@ body{
 .b1label {
   height: 40px;
   width: 100px;
-  font-family: "Sansation Light";
-  font-size: 18px;
-  font-weight: 300;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  font-weight: 600;
   line-height: normal;
-  color: rgba(74, 155, 205, 1);
   display: flex;
-  padding: 8px 15px 8px 23px;
-  background-color: rgba(162, 190, 226, 0.33);
-  border-color: rgba(133, 157, 189, 0.33);
-  margin-right: 16px;
-  border-radius: 18px;
-  box-shadow: 0 4px 4px 0 var(--transparent-black);
-  display: flex;
+
+  padding-left: 19px;
+  border-color: var(--gold);
+  color: var(--gold);
+  margin-left: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 0 var(--transparent-black);
   align-items: center;
 }
 
 .reg-label {
-  font-family: "Sansation Light";
-  font-size: 18px;
-  font-weight: 300;
+  height: 40px;
+  width: 230px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  font-weight: 600;
   line-height: normal;
-  color: rgba(74, 155, 205, 1);
-  background-color: rgba(162, 190, 226, 0.33);
-  border-radius: 18px;
-  padding: 8px 12px 7px 16px;
-  box-shadow: 0 4px 4px 0 var(--transparent-black);
   display: flex;
-  border-color: rgba(133, 157, 189, 0.33);
+  padding-left: 19px;
+  border-color: var(--gold);
+  color: var(--gold);
+  margin-left: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 0 var(--transparent-black);
   align-items: center;
 }
 
