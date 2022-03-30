@@ -1,0 +1,9 @@
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Зимченко', 'Александр', 'Александрович', 'zimchenko@mail.ru', 'zimchenko2001', 'q1w2e3r4t5');
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Краснова', 'Лидия', 'Олеговна', 'krasnova@mail.ru', 'krasnova2001', '1a2s3d4f5g');
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Медведев', 'Фёдор', 'Алексеевич', 'medvedev@mail.ru', 'medvedev2001', 'a1s2d3f4g5');
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Андреева', 'Анастасия', 'Валерьевна', 'andreeva@mail.ru', 'andreeva2001', '1z2x3c4v5b');
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Зеленин', 'Николай', 'Николаевич', 'zelenin@mail.ru', 'zelenin2001', 'z1x2c3v4b5');
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Савицкий', 'Евгений', 'Григорьевич', 'savizkiy@mail.ru', 'savizkiy2001', '2001qwerty');
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Соловьёва', 'Валентина', 'Александровна', 'solovieva@mail.ru', 'solovieva2001', 'ytrewq1111');
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Иванов', 'Иван', 'Иванович', 'ivanov.ivan@mail.ru', 'ivanov2001', '1q2w3e4r5t6y');
+INSERT Student(Surname, Name_student, Middle_name, email, Login, Password_student) VALUES ('Петров', 'Петр', 'Петрович', '@mail.ru', 'petrov2001', 'qwerty2001');
