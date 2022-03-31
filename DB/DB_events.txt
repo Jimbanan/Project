@@ -139,8 +139,7 @@ Id_group INT NOT NULL,
 Id_faculty INT NOT NULL,
 PRIMARY KEY ( Id_student_group ),
 FOREIGN KEY (Id_student) REFERENCES Student (Id_student) ON DELETE CASCADE,
-FOREIGN KEY (Id_group) REFERENCES GroupsVSTU (Id_group) ON DELETE CASCADE,
-FOREIGN KEY (Id_faculty) REFERENCES Faculties (Id_faculty) ON DELETE CASCADE
+FOREIGN KEY (Id_group) REFERENCES GroupsVSTU (Id_group) ON DELETE CASCADE
 ); 
 
 -- Table Employee
@@ -157,7 +156,6 @@ Id_faculty INT NOT NULL,
 Id_department INT NOT NULL,
 PRIMARY KEY ( Id_employee ),
 FOREIGN KEY (Id_role) REFERENCES Roles (Id_role) ON DELETE CASCADE,
-FOREIGN KEY (Id_faculty) REFERENCES Faculties (Id_faculty) ON DELETE CASCADE,
 FOREIGN KEY (Id_department) REFERENCES Department (Id_department) ON DELETE CASCADE
 ); 
 
