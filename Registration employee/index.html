@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Регистрация</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
+
+    <div class="header">
+        <h1 class="VSTU">ВГТУ</h1>
+        <p class="VSTU_full">ВОРОНЕЖСКИЙ ГОСУДАРСТВЕННЫЙ <br>ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</p>
+    </div>
 </head>
 
+<body>
 
-<body class="registracija-sotrudnika">
+<div class = "h1container">
+    <h1 style="color: var(--gold); margin-bottom: -5px"> Зарегистрируйтесь </h1>
+    <h1 style="font-size: 13px; color: var(--dim-gray)"> если вы сотрудник ВУЗа</h1>
+</div>
 
 <form class="avtorizacija" action="authorization.php" method="post" enctype="multipart/form-data">
-    <div class="title" class="container">
-        <p class="title_font">Регистрация сотрудника</p>
+    <div class="flex-wrapper-one">
+        <img src="../resourses/VSTU.png" class="logo">
+        <p class="labelmer">MЕРОПРИЯТИЯ</p>
     </div>
 
 
-    <div>
-        <p class="name-label">Подразделение, в котором я работаю по основной должности</p>
-        <select name="Выберите подразделение" class="select">
-            <option value="0">Выберите подразделение</option>
-            <option value="1">Первое</option>
-            <option value="2">Второе</option>
-            <option value="3">Третье</option>
-        </select>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+
+        <div class="wrap-input100 validate-input">
+            <select class="input100" name="division" id="signup-division">
+                <option value="0">выберите подразделение</option>
+                <option value="1">Деканат</option>
+                <option value="2">Кафедра</option>
+                <option value="3">Аспирантура</option>
+            </select>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" name="surname" id="signup-surname" placeholder="Введите фамилию">
+            <span class="focus-input100" data-placeholder="Surname"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" name="name" id="signup-name" placeholder="Введите имя">
+            <span class="focus-input100" data-placeholder="Name"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" name="patronymic" id="signup-patronymic" placeholder="Введите отчество">
+            <span class="focus-input100" data-placeholder="Patronymic"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" name="email" id="signup-email" placeholder="Введите email">
+            <span class="focus-input100" data-placeholder="Email"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input">
+        <input class="input100" type="password" name="pass" id="signup-password" placeholder="Введите пароль">
+        <span class="focus-input100" data-placeholder="Password"></span>
+        </div>
+
+        <div class="flex-wrapper-two">
+            <p><input type="submit" value="Назад" id="signup_sumbit" class="b1label"></p>
+            <p><input type="submit" value="Зарегистрироваться" id="login-send" class="reg-label"></p>
+        </div>
     </div>
-
-    <div>
-        <p class="name-label">Фамилия</p>
-        <input type="text" size="40" class="in_text" name="surname">
     </div>
-
-    <div>
-        <p class="name-label">Имя</p>
-        <input type="text" size="40" class="in_text" name="name">
-    </div>
-
-    <div>
-        <p class="name-label">Отчество</p>
-        <input type="text" size="40" class="in_text" name="patronymic">
-    </div>
-
-    <div>
-        <p class="name-label">Имя пользователя (e-mail)</p>
-        <input type="text" size="40" class="in_text" name="login">
-    </div>
-
-    <div>
-        <p class="name-label">Пароль (не менее 6 английских символов и/или цифр без пробелов)</p>
-        <input type="text" size="40" class="in_text" name="password">
-    </div>
-
-    <div class="flex-wrapper-three">
-        <input type="submit" value="Зарегистрироваться" class="button-ref">
-        <input type="submit" value="Отмена" class="cancell-button" id="Cancel_button">
-
-
-    </div>
-
     </div>
 </form>
 
-<script src="js.js"></script>
+<script src="registration.js"></script>
+
 </body>
 </html>
