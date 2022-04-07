@@ -1,36 +1,35 @@
 document.querySelector('#signup_sumbit').onclick = function (event) {
-    window.open("../Authorization/index.html","Авторизация");
+    event.preventDefault();
+    window.location.href = "http://localhost:63342/Project/Registration%20employee/index.html?_ijt=jgivq0kh7kq3hq0ccvvlh7kpfu&_ij_reload=RELOAD_ON_SAVE"
 }
 
 document.querySelector('#login-send').onclick = function (event) {
     event.preventDefault();
-    let division = document.querySelector('#signup-division').value;
-    let surname = document.querySelector('#signup-surname').value;
-    let name = document.querySelector('#signup-name').value;
-    let patr = document.querySelector('#signup-patronymic').value;
-    let email = document.querySelector('#signup-email').value;
+    let login = document.querySelector('#signup-name').value;
     let password = document.querySelector('#signup-password').value;
 
-    if(division == "Выберите направление" || surname == "" || name == "" || patr == "" || email == "" || password == ""){
-        alert("Пожалуйста, заполните все поля");
+
+    if(login == "" && password == ""){
+        alert("Заполните данные для входа");
     }
     else{
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"/>
+
         var success_login = new Boolean(false);
-        if (email.length < 7 ||  /[a-zA-Z]/.test(email) == false || /[0-9]/.test(email) == false
-            ||  /[@]/.test(email) == false) {
-            alert ( "Логин должен быть не менее 7 символов и содержать в себе буквы, цифры и @" );
-            success_login = false;
-        }
+        // if((login.search(/[0-9]/) != -1 && (login.search(/[A-Z]/) != -1|| login.search(/[a-z]/) != -1)) && login.length >=7){
+        //     success_login = true;
+        // }else{
+        //     alert("Логин указан неверно");
+        //     success_login = false;
+        // }
 
 
         var success_password = new Boolean(false);
-        if (password.length < 7 ||  /[a-zA-Z]/.test(password) == false || /[0-9]/.test(password) == false) {
-            alert ( "Пароль должен быть не менее 8 символов и содержать в себе буквы и цифры" );
-            success_password = false;
-        }
-
-        if(success_login && success_password){
-            alert ( "Регистрация прошла успешно" );
-        }
+        // if((password.search(/[0-9]/) != -1 && (password.search(/[A-Z]/) != -1|| password.search(/[a-z]/) != -1)) && password.length >=8){
+        //     success_password = true;
+        // }else{
+        //     alert("Пароль указан неверно");
+        //     success_password = false;
+        // }
     }
 }

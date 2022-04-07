@@ -5,10 +5,10 @@ if ($conn->connect_error) {
     die("Ошибка: " . $conn->connect_error);
 }
 
-$Name = $_POST['name'];
-$Password = $_POST['password'];
+$Name = $_GET['email'];
+$Password = $_GET['pass'];
 
-$sql = "SELECT * FROM Student WHERE Login = '$Name' AND Password = '$Password'";
+$sql = "SELECT * FROM student WHERE Login = '$Name' AND Password = '$Password'";
 
 $id_student = array();
 
@@ -27,7 +27,6 @@ if ($result = $conn->query($sql)) {
 
     }
 }
-
 
 
 
